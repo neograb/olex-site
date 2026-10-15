@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Olex · Confidentialité</title>
+<meta name="description" content="Règles de confidentialité d'Olex, assistant personnel privé.">
+<style>
+  :root { --fond: #fbfaf7; --texte: #1f1d1a; --doux: #6b665e; --lien: #2f5d8a; --trait: #e4e0d8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fond: #171614; --texte: #ece8e1; --doux: #a29c92; --lien: #8db8e3; --trait: #2e2b27; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fond); color: var(--texte);
+         font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 64px 16px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+  .sous-titre { color: var(--doux); margin: 0 0 32px; }
+  a { color: var(--lien); }
+  ul { padding-left: 20px; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--trait); color: var(--doux); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Règles de confidentialité</h1>
+  <p class="sous-titre">Olex · mises à jour le 15 octobre 2026</p>
+
+  <p>Olex est l'assistant personnel privé d'Alexandre Bonard. Il n'a qu'un seul utilisateur, son propriétaire. Ces
+  règles décrivent ce qu'Olex fait des données de son compte Google.</p>
+
+  <h2>Données consultées</h2>
+  <ul>
+    <li><strong>Gmail</strong>, en lecture seule : expéditeur, destinataires, objet, date et contenu des mails.</li>
+    <li><strong>Google Agenda</strong>, en lecture seule : titre, horaires et lieu des événements.</li>
+  </ul>
+  <p>Olex ne peut ni envoyer, ni supprimer, ni modifier un mail ou un événement.</p>
+
+  <h2>Utilisation</h2>
+  <p>Ces données servent uniquement à répondre aux questions du propriétaire et à lui envoyer chaque matin un résumé
+  de sa journée sur Telegram. Pour rédiger ces réponses, les extraits nécessaires sont transmis à l'API Claude
+  d'Anthropic, qui n'utilise pas ces données pour entraîner ses modèles.</p>
+
+  <h2>Conservation</h2>
+  <p>Olex ne garde pas de copie de la boîte mail ni de l'agenda : il les consulte au moment où il en a besoin. Il conserve
+  seulement les derniers échanges de la conversation et les informations que le propriétaire lui demande de noter,
+  sur un serveur privé auquel seul le propriétaire a accès.</p>
+
+  <h2>Partage</h2>
+  <p>Les données ne sont ni vendues, ni partagées, ni utilisées à des fins publicitaires. L'utilisation des données
+  reçues des API Google respecte les <a href="https://developers.google.com/terms/api-services-user-data-policy">règles
+  relatives aux données utilisateur des services d'API Google</a>, y compris les exigences d'utilisation limitée
+  (« Limited Use »).</p>
+
+  <h2>Retirer l'accès</h2>
+  <p>L'accès peut être retiré à tout moment depuis
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <footer><a href="index.html">Olex</a> · Contact : <a href="mailto:abonard@gmail.com">abonard@gmail.com</a></footer>
+</main>
+</body>
+</html>
